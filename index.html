@@ -24,12 +24,40 @@
       </select>
     </form>
 
-    <form action="javascript:" class="buttons">
-      <button>edit</button>
-      <button>remove</button>
-      <button>add</button>
-    </form>
+    <select class="form">
+      <option value="buttons">buttons</option>
+      <option value="edit">edit</option>
+      <option value="remove">remove</option>
+      <option value="add">add</option>
+    </select>
 
+    <div class="forms">
+      <form action="javascript:" class="buttons">
+        <button>edit</button>
+        <button>remove</button>
+        <button>add</button>
+      </form>
+
+      <form action="javascript:" class="edit">
+        <button type="reset">revert</button>
+        <input type="text" value="value">
+        <button type="submit">update</button>
+        <button>cancel</button>
+      </form>
+
+      <form action="javascript:" class="remove">
+        <span>remove value?</span>
+        <button type="submit">yes</button>
+        <button>no</button>
+      </form>
+
+      <form action="javascript:" class="add">
+        <button type="reset">clear</button>
+        <input type="text" placeholder="option">
+        <button type="submit">add</button>
+        <button>cancel</button>
+      </form>
+    </div>
   </header>
 </body>
 
