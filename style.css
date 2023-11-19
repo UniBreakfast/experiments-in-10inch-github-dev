@@ -6,6 +6,9 @@ header {
   display: none;
 }
 
-:has([value="buttons"]:checked)+div>.buttons {
+:has([value="buttons"]:checked)+div>.buttons,
+:has([value="edit"]:checked)+div>.edit,
+:has([value="remove"]:checked)+div>.remove,
+:has([value="add"]:checked)+div>.add {
   display: block;
 }
